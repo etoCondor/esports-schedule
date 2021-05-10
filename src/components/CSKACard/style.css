@@ -1,0 +1,25 @@
+.footballCard {
+	padding: 10px;
+	align-items: right;
+	border: 1px solid black;
+	margin: 20px;
+	min-height: 30%;
+	background: linear-gradient(
+		20deg,
+		rgba(255, 0, 0, 0.6) 0%,
+		rgba(0, 0, 255, 0.6) 20%,
+		rgba(255, 0, 0, 0.6) 40%,
+		rgba(0, 0, 255, 0.6) 60%,
+		rgba(255, 0, 0, 0.6) 80%,
+		rgba(0, 0, 255, 0.6) 100%
+	);
+	padding: 5%;
+	color: white;
+	text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.99);
+	overflow: scroll;
+}
+.footballCard p {
+	font-size: 1.3em;
+	font-weight: bold;
+	text-align: center;
+}
