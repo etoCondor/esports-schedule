@@ -55,15 +55,22 @@ ${currentHours}:${currentMinutes}`;
 		if (!loading) {
 			let currentI = [];
 			return teamMatches.data.map((item, i) => {
+				const date = new Date(item.match_start_iso);
+				let today = false;
+				if (
+					date.getDate() === new Date().getDate() &&
+					date.getMonth() === new Date().getMonth()
+				) {
+					today = true;
+				}
 				if (
 					(item.home_team.team_id === 6184 ||
 						item.away_team.team_id === 6184) &&
 					currentI.length < 2
 				) {
-					const date = new Date(item.match_start_iso);
 					currentI.push(i);
 					return (
-						<div key={i} className={`footballCard`}>
+						<div key={i} className={`footballCard ${today ? "today" : ""}`}>
 							<div className='versus'>
 								<img alt='sasi' src={item.home_team.logo}></img>
 
@@ -76,6 +83,8 @@ ${currentHours}:${currentMinutes}`;
 							</div>
 							<div className='date'>
 								<span>{dateCorrector(date)}</span>
+								<br />
+								{today ? <span>Today!</span> : null}
 							</div>
 						</div>
 					);

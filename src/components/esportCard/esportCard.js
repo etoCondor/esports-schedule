@@ -46,7 +46,14 @@ ${currentHours}:${currentMinutes}`;
 			return teamMatches.map((item, i) => {
 				const { scheduled_at } = item;
 				const date = new Date(scheduled_at);
-				if (i < 1) {
+				let today = false;
+				if (
+					date.getDate() === new Date().getDate() &&
+					date.getMonth() === new Date().getMonth()
+				) {
+					today = true;
+				}
+				if (i < 1 || today) {
 					let winner = "";
 					item.winner_id === teamID ? (winner = "green") : (winner = "red");
 					if (item.winner_id === teamID) {
@@ -57,7 +64,12 @@ ${currentHours}:${currentMinutes}`;
 						winner = "red";
 					}
 					return (
-						<div key={i} className={`gameCard ${item.videogame.slug}`}>
+						<div
+							key={i}
+							className={`gameCard ${item.videogame.slug} ${
+								today ? "today" : ""
+							}`}
+						>
 							<div className='videogame'>
 								{teamName} {item.videogame.name}
 							</div>
@@ -85,6 +97,8 @@ ${currentHours}:${currentMinutes}`;
 
 							<div className='date'>
 								<span>{dateCorrector(date)}</span>
+								<br />
+								{today ? <span>Today!</span> : null}
 							</div>
 						</div>
 					);

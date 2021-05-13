@@ -23,3 +23,12 @@ html {
 .football {
 	width: 50%;
 }
+.today {
+	animation: blink 3s linear infinite;
+}
+
+@keyframes blink {
+	50% {
+		background-color: rgba(0, 255, 0, 0.2);
+	}
+}
