@@ -70,7 +70,7 @@ ${currentHours}:${currentMinutes}`;
 				) {
 					currentI.push(i);
 					return (
-						<div key={i} className={`footballCard ${today ? "today" : ""}`}>
+						<div key={i} className={`footballCard ${today ? "todayBall" : ""}`}>
 							<div className='versus'>
 								<img alt='sasi' src={item.home_team.logo}></img>
 

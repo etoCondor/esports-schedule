@@ -24,3 +24,87 @@
 	font-weight: bold;
 	text-align: center;
 }
+
+.todayBall {
+	background: linear-gradient(
+		120deg,
+		#ff0000,
+		#0000ff,
+		#ff0000,
+		#0000ff,
+		#ff0000,
+		#0000ff,
+		#ff0000,
+		#0000ff,
+		#ff0000,
+		#0000ff,
+		#ff0000,
+		#0000ff
+	);
+	background-size: 2000% 2000%;
+
+	-webkit-animation: gradimation 50s linear infinite;
+	-moz-animation: gradimation 50s linear infinite;
+	animation: gradimation 50s linear infinite;
+}
+
+@-webkit-keyframes gradimation {
+	0% {
+		background-position: 0% 15%;
+	}
+	20% {
+		background-position: 100% 85%;
+	}
+	40% {
+		background-position: 0% 15%;
+	}
+	60% {
+		background-position: 100% 85%;
+	}
+	80% {
+		background-position: 0% 15%;
+	}
+	100% {
+		background-position: 100% 85%;
+	}
+}
+@-moz-keyframes gradimation {
+	0% {
+		background-position: 0% 15%;
+	}
+	20% {
+		background-position: 100% 85%;
+	}
+	40% {
+		background-position: 0% 15%;
+	}
+	60% {
+		background-position: 100% 85%;
+	}
+	80% {
+		background-position: 0% 15%;
+	}
+	100% {
+		background-position: 100% 85%;
+	}
+}
+@keyframes gradimation {
+	0% {
+		background-position: 0% 15%;
+	}
+	20% {
+		background-position: 100% 85%;
+	}
+	40% {
+		background-position: 0% 15%;
+	}
+	60% {
+		background-position: 100% 85%;
+	}
+	80% {
+		background-position: 0% 15%;
+	}
+	100% {
+		background-position: 100% 85%;
+	}
+}
