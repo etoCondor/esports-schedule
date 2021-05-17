@@ -54,7 +54,7 @@ ${currentHours}:${currentMinutes}`;
 	function renderPlayers() {
 		if (!loading) {
 			let currentI = [];
-			return teamMatches.data.map((item, i) => {
+			return teamMatches.data?.map((item, i) => {
 				const date = new Date(item.match_start_iso);
 				let today = false;
 				if (
@@ -78,7 +78,14 @@ ${currentHours}:${currentMinutes}`;
 									<p>
 										{item.home_team.name} vs {item.away_team.name}
 									</p>
+
+									<br />
+									<p>
+										{item.stats.home_score} : {item.stats.away_score}
+									</p>
+									<br />
 								</div>
+
 								<img alt='sasiska' src={item.away_team.logo}></img>
 							</div>
 							<div className='date'>
@@ -96,7 +103,7 @@ ${currentHours}:${currentMinutes}`;
 		}
 	}
 	const items = renderPlayers(teamMatches);
-	return loading ? <Spinner /> : items;
+	return loading ? <Spinner /> : items || null;
 }
 
 export default CSKACard;

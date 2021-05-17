@@ -43,7 +43,7 @@ ${currentHours}:${currentMinutes}`;
 
 	function renderPlayers() {
 		if (!loading) {
-			return teamMatches.map((item, i) => {
+			return teamMatches?.map((item, i) => {
 				const { scheduled_at } = item;
 				const date = new Date(scheduled_at);
 				let today = false;
@@ -110,7 +110,7 @@ ${currentHours}:${currentMinutes}`;
 		}
 	}
 	const items = renderPlayers(teamMatches);
-	return loading ? <Spinner /> : items;
+	return loading ? <Spinner /> : items || null;
 }
 
 export default EsportCard;

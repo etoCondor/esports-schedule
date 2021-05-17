@@ -1,5 +1,4 @@
 .footballCard {
-	padding: 10px;
 	align-items: right;
 	border: 1px solid black;
 	border-radius: 50px;
@@ -14,13 +13,13 @@
 		rgba(255, 0, 0, 0.6) 80%,
 		rgba(0, 0, 255, 0.6) 100%
 	);
-	padding: 5%;
+	padding: 4%;
 	color: white;
 	text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.99);
 	overflow: scroll;
 }
 .footballCard p {
-	font-size: 1.3em;
+	font-size: 1.5em;
 	font-weight: bold;
 	text-align: center;
 }
