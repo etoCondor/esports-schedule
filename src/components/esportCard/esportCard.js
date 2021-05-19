@@ -76,7 +76,7 @@ ${currentHours}:${currentMinutes}`;
 							<div className='serie'>{item.serie.full_name}</div>
 							<div className='versus'>
 								<img
-									alt='sasi'
+									alt={item.opponents[0]?.opponent.name}
 									src={item.opponents[0]?.opponent.image_url}
 								></img>
 
@@ -90,7 +90,7 @@ ${currentHours}:${currentMinutes}`;
 									>{`${item.results[0]?.score} : ${item.results[1]?.score}`}</p>
 								</div>
 								<img
-									alt='sasiska'
+									alt={item.opponents[1]?.opponent.name}
 									src={item.opponents[1]?.opponent.image_url}
 								></img>
 							</div>
