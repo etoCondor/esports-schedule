@@ -6,7 +6,8 @@ async function getMatches(teamID) {
 
 async function getCSKAMatches(date) {
 	const matches = await fetch(
-		`https://app.sportdataapi.com/api/v1/soccer/matches?apikey=a0e96410-acb8-11eb-8890-3f0cbf105a29&season_id=1477&date_from=${date}`,
+		`https://app.sportdataapi.com/api/v1/soccer/matches?apikey=a0e96410-acb8-11eb-8890-3f0cbf105a29&season_id=1477`,
+		// `https://app.sportdataapi.com/api/v1/soccer/matches?apikey=a0e96410-acb8-11eb-8890-3f0cbf105a29&season_id=1477&date_from=${date}`,
 	).then((response) => response.json());
 	return matches;
 }

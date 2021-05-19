@@ -26,7 +26,7 @@ function EsportCard({ teamID, teamName }) {
 				? date.getDate()
 				: `0${date.getDate()}`;
 		const currentMonth =
-			date.getMonth().toString().length === 2
+			(1 + date.getMonth()).toString().length === 2
 				? date.getMonth() + 1
 				: `0${date.getMonth() + 1}`;
 		const currentHours =
