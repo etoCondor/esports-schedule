@@ -72,7 +72,7 @@ ${currentHours}:${currentMinutes}`;
 					return (
 						<div key={i} className={`footballCard ${today ? "todayBall" : ""}`}>
 							<div className='versus'>
-								<img alt='sasi' src={item.home_team.logo}></img>
+								<img alt={item.home_team.name} src={item.home_team.logo}></img>
 
 								<div className='score'>
 									<p>
@@ -86,7 +86,7 @@ ${currentHours}:${currentMinutes}`;
 									<br />
 								</div>
 
-								<img alt='sasiska' src={item.away_team.logo}></img>
+								<img alt={item.away_team.name} src={item.away_team.logo}></img>
 							</div>
 							<div className='date'>
 								<span>{dateCorrector(date)}</span>
