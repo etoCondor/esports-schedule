@@ -54,12 +54,14 @@ ${currentHours}:${currentMinutes}`;
 	function renderPlayers() {
 		if (!loading) {
 			let currentI = [];
-			return teamMatches.data?.map((item, i) => {
+			return teamMatches.data?.reverse().map((item, i) => {
+				// return teamMatches.data?.map((item, i) => {
 				const date = new Date(item.match_start_iso);
 				let today = false;
 				if (
 					date.getDate() === new Date().getDate() &&
-					date.getMonth() === new Date().getMonth()
+					date.getMonth() === new Date().getMonth() &&
+					date.getYear() === new Date().getYear()
 				) {
 					today = true;
 				}

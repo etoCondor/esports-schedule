@@ -49,7 +49,8 @@ ${currentHours}:${currentMinutes}`;
 				let today = false;
 				if (
 					date.getDate() === new Date().getDate() &&
-					date.getMonth() === new Date().getMonth()
+					date.getMonth() === new Date().getMonth() &&
+					date.getYear() === new Date().getYear()
 				) {
 					today = true;
 				}
