@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import { getMatches } from "../../fetchService/getMatches";
 import "./style.css";
 import Spinner from "../spinner";
+import tbaImg from "../../img/tba.png";
+import tba2Img from "../../img/tba2.png";
 
 function EsportCard({ teamID, teamName }) {
 	const [loading, setLoading] = useState(true);
@@ -78,21 +80,21 @@ ${currentHours}:${currentMinutes}`;
 							<div className='versus'>
 								<img
 									alt={item.opponents[0]?.opponent.name}
-									src={item.opponents[0]?.opponent.image_url}
+									src={item.opponents[0]?.opponent.image_url || tba2Img}
 								></img>
 
 								<div className='score'>
 									<p>
-										{item.opponents[0]?.opponent.name} vs{" "}
-										{item.opponents[1]?.opponent.name}
+										{item.opponents[0]?.opponent.name || "TBA"} vs{" "}
+										{item.opponents[1]?.opponent.name || "TBA"}
 									</p>
-									<p
-										className={winner}
-									>{`${item.results[0]?.score} : ${item.results[1]?.score}`}</p>
+									<p className={winner}>{`${item.results[0]?.score || 0} : ${
+										item.results[1]?.score || 0
+									}`}</p>
 								</div>
 								<img
 									alt={item.opponents[1]?.opponent.name}
-									src={item.opponents[1]?.opponent.image_url}
+									src={item.opponents[1]?.opponent.image_url || tbaImg}
 								></img>
 							</div>
 
