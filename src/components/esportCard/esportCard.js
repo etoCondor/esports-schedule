@@ -39,7 +39,7 @@ function EsportCard({ teamID, teamName }) {
 			date.getMinutes().toString().length === 2
 				? date.getMinutes()
 				: `0${date.getMinutes()}`;
-		return `${currentDate}.${currentMonth}.${date.getFullYear()} 
+		return `${currentDate}.${currentMonth}.${date.getFullYear()}
 ${currentHours}:${currentMinutes}`;
 	}
 
@@ -76,7 +76,13 @@ ${currentHours}:${currentMinutes}`;
 							<div className='videogame'>
 								{teamName} {item.videogame.name}
 							</div>
+							<p>
+								{item.opponents[0]?.opponent.name || "TBA"} vs{" "}
+								{item.opponents[1]?.opponent.name || "TBA"}
+							</p>
 							<div className='serie'>{item.serie.full_name}</div>
+							<div className='serie'>{item.name}</div>
+							<div className='serie'>Best of {item.number_of_games}</div>
 							<div className='versus'>
 								<img
 									alt={item.opponents[0]?.opponent.name}
@@ -84,10 +90,6 @@ ${currentHours}:${currentMinutes}`;
 								></img>
 
 								<div className='score'>
-									<p>
-										{item.opponents[0]?.opponent.name || "TBA"} vs{" "}
-										{item.opponents[1]?.opponent.name || "TBA"}
-									</p>
 									<p className={winner}>{`${item.results[0]?.score || 0} : ${
 										item.results[1]?.score || 0
 									}`}</p>
