@@ -68,7 +68,10 @@ ${currentHours}:${currentMinutes}`;
 				if (
 					(item.home_team.team_id === 6184 ||
 						item.away_team.team_id === 6184) &&
-					currentI.length < 2
+					currentI.length < 2 &&
+					date.getDate() >= new Date().getDate() &&
+					date.getMonth() >= new Date().getMonth() &&
+					date.getYear() >= new Date().getYear()
 				) {
 					currentI.push(i);
 					return (
