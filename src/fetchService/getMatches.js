@@ -1,5 +1,5 @@
 async function getMatches(teamID) {
-	const url = `https://api.allorigins.win/raw?url=https://api.pandascore.co/teams/${teamID}/matches?token=Y5KMbTDQ9OImOMYfc1Ns-qlX12NwKWMGWA6guV08XBxPREbMkEw`;
+	const url = `https://api.pandascore.co/teams/${teamID}/matches?token=Y5KMbTDQ9OImOMYfc1Ns-qlX12NwKWMGWA6guV08XBxPREbMkEw`;
 	const matches = await fetch(url).then((response) => response.json());
 	return matches;
 }
