@@ -1,58 +1,59 @@
 .gameCard {
-	padding: 10px;
-	align-items: right;
-	border: 1px solid black;
-	border-radius: 50px;
-	margin: 20px;
-	min-height: 30%;
-	overflow: scroll;
+  position: relative;
+  padding: 10px;
+  align-items: right;
+  border: 1px solid black;
+  border-radius: 50px;
+  margin: 20px;
+  min-height: 30%;
+  overflow: scroll;
 }
 .gameCard p {
-	font-size: 1.5em;
-	font-weight: bold;
-	text-align: center;
-	margin: 5px;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
+  margin: 5px;
 }
 .dota-2 {
-	background-color: rgba(255, 0, 0, 0.2);
+  background-color: rgba(255, 0, 0, 0.2);
 }
 .cs-go {
-	background-color: rgba(0, 0, 255, 0.2);
+  background-color: rgba(0, 0, 255, 0.2);
 }
 .versus {
-	display: flex;
-	width: 100%;
-	justify-content: space-between;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
 }
 
 .date,
 .serie,
 .videogame {
-	width: fit-content;
-	margin: 0 auto;
-	text-align: center;
+  width: fit-content;
+  margin: 0 auto;
+  text-align: center;
 }
 .score {
-	margin-top: 10px;
+  margin-top: 10px;
 }
 .videogame {
-	border: 1px dashed black;
-	font-size: 1.5em;
-	padding: 5px;
-	margin-bottom: 10px;
+  border: 1px dashed black;
+  font-size: 1.5em;
+  padding: 5px;
+  margin-bottom: 10px;
 }
 img {
-	width: 100px;
-	height: 100px;
+  width: 100px;
+  height: 100px;
 
-	margin: -70px 25px 0 25px;
+  margin: -70px 25px 0 25px;
 }
 
 .red {
-	color: rgba(255, 0, 0, 0.7);
-	text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.99);
+  color: rgba(255, 0, 0, 0.7);
+  text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.99);
 }
 .green {
-	color: rgba(0, 255, 0, 0.7);
-	text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.99);
+  color: rgba(0, 255, 0, 0.7);
+  text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.99);
 }

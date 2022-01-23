@@ -1,113 +1,114 @@
 .footballCard {
-	align-items: right;
-	border: 1px solid black;
-	border-radius: 50px;
-	margin: 20px;
-	min-height: 30%;
-	background: linear-gradient(
-		20deg,
-		rgba(255, 0, 0, 0.6) 0%,
-		rgba(0, 0, 255, 0.6) 20%,
-		rgba(255, 0, 0, 0.6) 40%,
-		rgba(0, 0, 255, 0.6) 60%,
-		rgba(255, 0, 0, 0.6) 80%,
-		rgba(0, 0, 255, 0.6) 100%
-	);
-	padding: 7% 4% 0 4%;
-	color: white;
-	text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.99);
-	overflow: scroll;
+  position: relative;
+  align-items: right;
+  border: 1px solid black;
+  border-radius: 50px;
+  margin: 20px;
+  min-height: 30%;
+  background: linear-gradient(
+    20deg,
+    rgba(255, 0, 0, 0.6) 0%,
+    rgba(0, 0, 255, 0.6) 20%,
+    rgba(255, 0, 0, 0.6) 40%,
+    rgba(0, 0, 255, 0.6) 60%,
+    rgba(255, 0, 0, 0.6) 80%,
+    rgba(0, 0, 255, 0.6) 100%
+  );
+  padding: 7% 4% 0 4%;
+  color: white;
+  text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.99);
+  overflow: scroll;
 }
 .footballCard p {
-	font-size: 1.5em;
-	font-weight: bold;
-	text-align: center;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
 }
 
 .todayBall {
-	background: linear-gradient(
-		120deg,
-		#ff0000,
-		#0000ff,
-		#ff0000,
-		#0000ff,
-		#ff0000,
-		#0000ff,
-		#ff0000,
-		#0000ff,
-		#ff0000,
-		#0000ff,
-		#ff0000,
-		#0000ff
-	);
-	background-size: 2000% 2000%;
+  background: linear-gradient(
+    120deg,
+    #ff0000,
+    #0000ff,
+    #ff0000,
+    #0000ff,
+    #ff0000,
+    #0000ff,
+    #ff0000,
+    #0000ff,
+    #ff0000,
+    #0000ff,
+    #ff0000,
+    #0000ff
+  );
+  background-size: 2000% 2000%;
 
-	-webkit-animation: gradimation 50s linear infinite;
-	-moz-animation: gradimation 50s linear infinite;
-	animation: gradimation 50s linear infinite;
+  -webkit-animation: gradimation 50s linear infinite;
+  -moz-animation: gradimation 50s linear infinite;
+  animation: gradimation 50s linear infinite;
 }
 .footballCard img {
-	width: 100px;
-	height: 100px;
-	margin-top: 10px;
+  width: 100px;
+  height: 100px;
+  margin-top: 10px;
 }
 @-webkit-keyframes gradimation {
-	0% {
-		background-position: 0% 15%;
-	}
-	20% {
-		background-position: 100% 85%;
-	}
-	40% {
-		background-position: 0% 15%;
-	}
-	60% {
-		background-position: 100% 85%;
-	}
-	80% {
-		background-position: 0% 15%;
-	}
-	100% {
-		background-position: 100% 85%;
-	}
+  0% {
+    background-position: 0% 15%;
+  }
+  20% {
+    background-position: 100% 85%;
+  }
+  40% {
+    background-position: 0% 15%;
+  }
+  60% {
+    background-position: 100% 85%;
+  }
+  80% {
+    background-position: 0% 15%;
+  }
+  100% {
+    background-position: 100% 85%;
+  }
 }
 @-moz-keyframes gradimation {
-	0% {
-		background-position: 0% 15%;
-	}
-	20% {
-		background-position: 100% 85%;
-	}
-	40% {
-		background-position: 0% 15%;
-	}
-	60% {
-		background-position: 100% 85%;
-	}
-	80% {
-		background-position: 0% 15%;
-	}
-	100% {
-		background-position: 100% 85%;
-	}
+  0% {
+    background-position: 0% 15%;
+  }
+  20% {
+    background-position: 100% 85%;
+  }
+  40% {
+    background-position: 0% 15%;
+  }
+  60% {
+    background-position: 100% 85%;
+  }
+  80% {
+    background-position: 0% 15%;
+  }
+  100% {
+    background-position: 100% 85%;
+  }
 }
 @keyframes gradimation {
-	0% {
-		background-position: 0% 15%;
-	}
-	20% {
-		background-position: 100% 85%;
-	}
-	40% {
-		background-position: 0% 15%;
-	}
-	60% {
-		background-position: 100% 85%;
-	}
-	80% {
-		background-position: 0% 15%;
-	}
-	100% {
-		background-position: 100% 85%;
-	}
+  0% {
+    background-position: 0% 15%;
+  }
+  20% {
+    background-position: 100% 85%;
+  }
+  40% {
+    background-position: 0% 15%;
+  }
+  60% {
+    background-position: 100% 85%;
+  }
+  80% {
+    background-position: 0% 15%;
+  }
+  100% {
+    background-position: 100% 85%;
+  }
 }
