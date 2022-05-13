@@ -42,7 +42,7 @@ function CSKACard() {
         const date = new Date(item.match_start_iso);
         let today = false;
 
-        if (moment().isSame(date)) {
+        if (moment().isSame(date, "day")) {
           today = true;
         }
         if (

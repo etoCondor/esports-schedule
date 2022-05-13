@@ -33,7 +33,7 @@ function EsportCard({ teamID, teamName }) {
         const { scheduled_at } = item;
         const date = new Date(scheduled_at);
         let today = false;
-        if (moment().isSame(date)) {
+        if (moment().isSame(date, "day")) {
           today = true;
         }
         if (i < 1 || today) {
