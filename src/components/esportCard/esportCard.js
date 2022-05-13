@@ -18,7 +18,7 @@ function EsportCard({ teamID, teamName }) {
 
   async function getteamMatches() {
     setLoading(true);
-    const matches = await getMatches(teamID); //1651-vpDota 3216-naviCSGO 3288-vpCSGO
+    const matches = await getMatches(teamID); //1651-vpDota 3216-naviCSGO 3288-vpCSGO 1669-TSDota
     setTeamMatches(matches);
     setLoading(false);
   }
